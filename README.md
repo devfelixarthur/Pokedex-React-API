@@ -47,7 +47,7 @@ Componente responsável por renderizar a barra de navegação na parte superior 
 
 Este arquivo é responsável por gerenciar as rotas da aplicação. Ele utiliza a biblioteca react-router-dom para definir as rotas da aplicação e renderizar os componentes correspondentes a cada rota. O App.js possui três rotas principais: a rota inicial "/", que renderiza a página principal da aplicação, a rota "/details/:id", que renderiza a página de detalhes de um Pokémon específico e a rota "/pokedex", que renderiza a lista de Pokémons adicionados à Pokédex pessoal do usuário.
 
-### Instação e Configuração  📝 💻 
+### Instalação e Configuração  📝 💻 
 
 - ***1)*** Clone o repositório do projeto em seu ambiente local:
    ~~~javascript
