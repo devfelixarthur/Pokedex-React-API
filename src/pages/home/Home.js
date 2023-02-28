@@ -9,19 +9,17 @@ import { MainContainer } from "../../components/main/style";
 import { Titulo, AllPokemons } from "./HomeStyle";
 import { BasicUsageAdd } from "../../constantes/modal";
 
-
-
 function Home() {
   const context = useContext(GlobalContext);
-  const { pokemons, addToPokedex, isOpen} = context;
+  const { pokemons, addToPokedex, isOpen } = context;
 
   return (
     <div>
       <NavBar />
-    <MainContainer>
-      <Titulo>Todos os Pokémons</Titulo>        
+      <MainContainer>
+        <Titulo>Todos os Pokémons</Titulo>
         <AllPokemons>
-          {isOpen &&  <BasicUsageAdd/> }
+          {isOpen && <BasicUsageAdd />}
           {pokemons.map((pokemon) => {
             const type = pokemon.types
               ? pokemon.types.map((type, index) => {
