@@ -1,6 +1,6 @@
 import React from "react";
-import { NavContainer, NavStyled, Titulo } from "./style";
-import { Button, RangeSliderThumb } from "@chakra-ui/react";
+import { NavContainer, NavStyled} from "./style";
+import { Button} from "@chakra-ui/react";
 import pokemonLogo from "../../imagens/pokemonLogo.png";
 import { useLocation, useNavigate, useParams } from "react-router-dom";
 import { goToPokedex, goToHome } from "../../router/Cordinator";
@@ -12,7 +12,7 @@ function NavBar() {
   const navigate = useNavigate();
   const location = useLocation();
   const context = useContext(GlobalContext);
-  const { removeFromPokedex, pokedex, addToPokedex } = context;
+  const { removeFromPokedex, pokedex } = context;
   const { name } = useParams();
 
   console.log(pokedex);

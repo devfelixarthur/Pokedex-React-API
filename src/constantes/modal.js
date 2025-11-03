@@ -4,8 +4,6 @@ import {
   ModalContent,
   ModalBody,
   ModalCloseButton,
-  useDisclosure,
-  Button,
 } from "@chakra-ui/react";
 import { useContext } from "react";
 import { useLocation } from "react-router-dom";
@@ -15,7 +13,7 @@ import pokemonRemovido from "../imagens/pokemonRemovido.png";
 
 export function BasicUsageAdd() {
   const context = useContext(GlobalContext);
-  const { isOpen, onOpen, onClose } = context;
+  const { isOpen, onClose } = context;
   const location = useLocation();
 
   return (

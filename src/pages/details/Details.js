@@ -40,8 +40,10 @@ const Details = () => {
       <NavBar />
       <MainContainer>
         <Titulo>Detalhes</Titulo>
-        {isOpen &&  <BasicUsageAdd/> }
-        <DetailContainer color={getPokemonColors(pokeDetail?.types[0]?.type?.name)}>
+        {isOpen && <BasicUsageAdd />}
+        <DetailContainer
+          color={getPokemonColors(pokeDetail?.types[0]?.type?.name)}
+        >
           <ContainerImagens>
             <Imagem src={pokeDetail?.sprites?.front_default} />
             <Imagem src={pokeDetail?.sprites?.back_default} />
@@ -99,7 +101,9 @@ const Details = () => {
           </ContainerInfos>
 
           <PokeImg
-            src={pokeDetail?.sprites?.other?.["official-artwork"]?.front_default}
+            src={
+              pokeDetail?.sprites?.other?.["official-artwork"]?.front_default
+            }
           />
         </DetailContainer>
       </MainContainer>

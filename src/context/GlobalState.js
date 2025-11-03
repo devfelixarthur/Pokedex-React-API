@@ -2,8 +2,6 @@ import axios from "axios";
 import { useEffect, useState } from "react";
 import { Base_URL } from "../constantes/base_url";
 import { GlobalContext } from "./GlobalContext";
-import ReactModal from "react-modal";
-import pokemoAdicionado from "../imagens/pokemoAdicionado.png"
 import { useDisclosure } from "@chakra-ui/react";
 
 // Função que gerencia o estado global da aplicação
